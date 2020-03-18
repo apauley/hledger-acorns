@@ -1,0 +1,7 @@
+2018-01-01 Existing Acorn Hoard
+    assets:Acorns                         1000 ACRN = 1000 ACRN
+    equity:opening/closing balances
+
+2018-09-01 Collected Acorns
+    assets:Acorns                          200 ACRN = 1200 ACRN
+    income:Acorns

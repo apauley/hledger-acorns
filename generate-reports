@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+REPORTFILE="reports.txt"
+
+BSCMD="hledger -f all.journal balancesheet --yearly --pretty-tables"
+echo ${BSCMD} > ${REPORTFILE}
+${BSCMD} >> ${REPORTFILE} 2>&1
+echo >> ${REPORTFILE}
+
+for JOURNAL in 20*.journal
+do
+    BSCMD="hledger -f ${JOURNAL} balancesheet --yearly --pretty-tables"
+    echo ${BSCMD} >> ${REPORTFILE}
+    ${BSCMD} >> ${REPORTFILE} 2>&1
+    echo >> ${REPORTFILE}
+done
+
+cat ${REPORTFILE}
