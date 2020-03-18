@@ -1,20 +1,20 @@
-hledger -f all.journal balancesheet --yearly --pretty-tables
+hledger -f all.journal balancesheet --yearly --pretty-tables not:desc:'(opening|closing) balances'
 Balance Sheet 2018-12-31,,2020-12-31
 
                ║ 2018-12-31  2019-12-31  2020-12-31 
 ═══════════════╬════════════════════════════════════
  Assets        ║                                    
 ───────────────╫────────────────────────────────────
- assets:Acorns ║          0           0    750 ACRN 
+ assets:Acorns ║  1200 ACRN    900 ACRN    750 ACRN 
 ───────────────╫────────────────────────────────────
-               ║          0           0    750 ACRN 
+               ║  1200 ACRN    900 ACRN    750 ACRN 
 ═══════════════╬════════════════════════════════════
  Liabilities   ║                                    
 ───────────────╫────────────────────────────────────
 ───────────────╫────────────────────────────────────
                ║                                    
 ═══════════════╬════════════════════════════════════
- Net:          ║          0           0    750 ACRN 
+ Net:          ║  1200 ACRN    900 ACRN    750 ACRN 
 
 hledger -f 2018.journal balancesheet --yearly --pretty-tables
 Balance Sheet 2018-12-31
