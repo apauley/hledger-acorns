@@ -1,0 +1,10 @@
+* hledger-acorns
+
+Tracking acorns to better understand closing balances.
+
+Related to https://github.com/apauley/hledger-flow/issues/79
+
+** Explanation
+
+Have a look at each commit message (and corresponding diff) in sequence:
+https://github.com/apauley/hledger-acorns/commits/master
