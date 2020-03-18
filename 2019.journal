@@ -5,7 +5,3 @@
 2019-02-28 Eat Acorns
     assets:Acorns                         -300 ACRN = 900 ACRN
     expenses:Food
-
-2019-12-31 closing balances
-    assets:Acorns                         -900 ACRN = 0 ACRN
-    equity:opening/closing balances

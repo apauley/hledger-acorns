@@ -1,3 +1,11 @@
 include 2018.journal
+2018-12-31 closing balances
+    assets:Acorns                        -1200 ACRN = 0 ACRN
+    equity:opening/closing balances
+
 include 2019.journal
+2019-12-31 closing balances
+    assets:Acorns                         -900 ACRN = 0 ACRN
+    equity:opening/closing balances
+
 include 2020.journal
