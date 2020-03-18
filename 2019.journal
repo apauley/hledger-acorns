@@ -1,3 +1,11 @@
+2019-01-01 opening balances
+    assets:Acorns                         1200 ACRN = 1200 ACRN
+    equity:opening/closing balances
+
 2019-02-28 Eat Acorns
     assets:Acorns                         -300 ACRN = 900 ACRN
     expenses:Food
+
+2019-12-31 closing balances
+    assets:Acorns                         -900 ACRN = 0 ACRN
+    equity:opening/closing balances

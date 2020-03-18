@@ -5,64 +5,66 @@ Balance Sheet 2018-12-31,,2020-12-31
 ═══════════════╬════════════════════════════════════
  Assets        ║                                    
 ───────────────╫────────────────────────────────────
- assets:Acorns ║  1200 ACRN    900 ACRN    750 ACRN 
+ assets:Acorns ║          0           0    750 ACRN 
 ───────────────╫────────────────────────────────────
-               ║  1200 ACRN    900 ACRN    750 ACRN 
+               ║          0           0    750 ACRN 
 ═══════════════╬════════════════════════════════════
  Liabilities   ║                                    
 ───────────────╫────────────────────────────────────
 ───────────────╫────────────────────────────────────
                ║                                    
 ═══════════════╬════════════════════════════════════
- Net:          ║  1200 ACRN    900 ACRN    750 ACRN 
+ Net:          ║          0           0    750 ACRN 
 
 hledger -f 2018.journal balancesheet --yearly --pretty-tables
 Balance Sheet 2018-12-31
 
-               ║ 2018-12-31 
+             ║ 2018-12-31 
+═════════════╬════════════
+ Assets      ║            
+─────────────╫────────────
+─────────────╫────────────
+             ║          0 
+═════════════╬════════════
+ Liabilities ║            
+─────────────╫────────────
+─────────────╫────────────
+             ║            
+═════════════╬════════════
+ Net:        ║          0 
+
+hledger -f 2019.journal balancesheet --yearly --pretty-tables
+Balance Sheet 2019-12-31
+
+             ║ 2019-12-31 
+═════════════╬════════════
+ Assets      ║            
+─────────────╫────────────
+─────────────╫────────────
+             ║          0 
+═════════════╬════════════
+ Liabilities ║            
+─────────────╫────────────
+─────────────╫────────────
+             ║            
+═════════════╬════════════
+ Net:        ║          0 
+
+hledger -f 2020.journal balancesheet --yearly --pretty-tables
+Balance Sheet 2020-12-31
+
+               ║ 2020-12-31 
 ═══════════════╬════════════
  Assets        ║            
 ───────────────╫────────────
- assets:Acorns ║  1200 ACRN 
+ assets:Acorns ║   750 ACRN 
 ───────────────╫────────────
-               ║  1200 ACRN 
+               ║   750 ACRN 
 ═══════════════╬════════════
  Liabilities   ║            
 ───────────────╫────────────
 ───────────────╫────────────
                ║            
 ═══════════════╬════════════
- Net:          ║  1200 ACRN 
-
-hledger -f 2019.journal balancesheet --yearly --pretty-tables
-hledger: balance assertion: "/Users/andreas/Code/Accounting/hledger-acorns/2019.journal" (line 2, column 53)
-transaction:
-2019-02-28 Eat Acorns
-    assets:Acorns       -300 ACRN = 900 ACRN
-    expenses:Food        300 ACRN
-
-assertion details:
-date:       2019-02-28
-account:    assets:Acorns
-commodity:  ACRN
-calculated: -300
-asserted:   900
-difference: 1200
-
-
-hledger -f 2020.journal balancesheet --yearly --pretty-tables
-hledger: balance assertion: "/Users/andreas/Code/Accounting/hledger-acorns/2020.journal" (line 2, column 53)
-transaction:
-2020-02-29 Eat Acorns
-    assets:Acorns       -150 ACRN = 750 ACRN
-    expenses:Food        150 ACRN
-
-assertion details:
-date:       2020-02-29
-account:    assets:Acorns
-commodity:  ACRN
-calculated: -150
-asserted:   750
-difference: 900
-
+ Net:          ║   750 ACRN 
 
